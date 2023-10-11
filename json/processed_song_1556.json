@@ -1,0 +1,47 @@
+{
+  "song_title": "Blackbird",
+  "artist_name": "The Beatles",
+  "publication_date": {
+    "year": 1968,
+    "month": 11,
+    "day": 22
+  },
+  "album_title": "The Beatles (White Album)",
+  "lyrics": [
+    {
+      "header": "Verse 1",
+      "annotation": "This line, written by Paul McCartney, is a reference to the African American community\u2019s struggle for civil rights, especially in the 1960s.\n\nIt is a metaphor, comparing the plight of Black Americans in the 1960s to that of a blackbird learning to fly with broken wings.\n\nThe \u201cbroken wings\u201d represent how the community has been beaten down and oppressed. The phrase \u201clearn to fly\u201d is about how the community has the potential to arise and fight for their rights, and has been, just as the blackbird in the song is taking its wings, though they are damaged, and learning to fly with them.\n\nThe line draws particularly from the case of the \u201cLittle Rock Nine,\u201d nine brave Black students who attended a school in Arkansas that had previously been all White, planting themselves directly in the face of racism and discrimination. (More can be read about this through the first link below.)\n\nSources:\n\n\nhttps://americansongwriter.com/meaning-blackbird-the-beatles-song-lyrics/\nhttps://musicaroo.com/blackbird-lyrics-meaning/",
+      "lyrics": "Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise"
+    },
+    {
+      "header": "Verse 2",
+      "annotation": "Despite Paul McCartney\u2019s optimism, flying with a broken wing, or seeing with sunken eyes, is very difficult. Ending segregation was important, but it didn\u2019t provide African Americans with equality\u2014their circumstances were still much worse than those of their white counterparts.\n\nToday, compared to white citizens, African Americans are less likely to own their own home, more likely to go to prison, and will earn less money on average. Ending segregation alone has not led to equality.",
+      "lyrics": "Blackbird singing in the dead of night Take these sunken eyes and learn to see All your life You were only waiting for this moment to be free"
+    },
+    {
+      "header": "Chorus",
+      "annotation": "McCartney met 2 women of the original Little Rock Nine, Thelma Mothershed Wair and Elizabeth Eckford, at his Little Rock Concert on April 30th, 2016.\n\n\u201cIncredible to meet two of the Little Rock Nine\u2013pioneers of the civil rights movement and inspiration for Blackbird.\u201d \u2013 Paul McCartney, Twitter",
+      "lyrics": "Blackbird fly, blackbird fly Into the light of the dark, black night"
+    },
+    {
+      "header": "Instrumental Break",
+      "annotation": "",
+      "lyrics": ""
+    },
+    {
+      "header": "Chorus",
+      "annotation": "",
+      "lyrics": "Blackbird fly, blackbird fly Into the light of the dark, black night"
+    },
+    {
+      "header": "Verse 3",
+      "annotation": "In Britain, \u2018'bird\u2019\u2018 is slang for a young girl.\n\nI actually just remembered why I\u2019d written \u2018Blackbird\u2019 [\u2026] I was in Scotland playing on my guitar, and I remembered this whole idea of \u2018you were only waiting for this moment to arise\u2019 was about [\u2026] Black people\u2019s struggle in the southern states, and I was using the symbolism of a blackbird. It\u2019s not really about a blackbird whose wings are broken, you know, it\u2019s a bit more symbolic.\n\n\u2013Paul McCartney in 2002",
+      "lyrics": "Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise"
+    },
+    {
+      "header": "Outro",
+      "annotation": "",
+      "lyrics": "You were only waiting for this moment to arise You were only waiting for this moment to arise"
+    }
+  ]
+}
