@@ -1,0 +1,60 @@
+@prefix core: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:> .
+@prefix ex: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/> .
+@prefix mm: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:> .
+@prefix ns1: <http://example.org/> .
+
+<http://example.org/song/d4c491b3-6bca-42cc-89bb-553b94168595> a ns1:Song ;
+    ns1:hasInstrumentalbreak3 <http://example.org/instrumentalbreak3/43c42b6b-d610-49f7-b363-2ba3cf73ecaa> ;
+    core:hasPart <http://example.org/outro5/efcf0407-d161-4cb3-98c5-455634ed3973>,
+        <http://example.org/verse10/4cb7de80-373a-4aa0-9fcf-6df3ab240bad>,
+        <http://example.org/verse21/64df47a6-e19d-4ea4-828d-88f060de98d3>,
+        <http://example.org/verse32/01ee7f89-e748-4e50-b356-88819b5ad289>,
+        <http://example.org/verse44/dcb5ee22-6bc1-433b-9f0e-9d9341edf5cc> ;
+    core:title "You Never Give Me Your Money" ;
+    mm:isInvolvedIn <http://example.org/artist/63e871b0-e4cf-40de-a8bc-a9657ae37034> ;
+    mm:isPartOfRelease <http://example.org/album/05c900b2-b53f-454c-b76d-117761f39bdb> .
+
+<http://example.org/album/05c900b2-b53f-454c-b76d-117761f39bdb> a ns1:Album ;
+    core:title "Abbey Road" .
+
+<http://example.org/artist/63e871b0-e4cf-40de-a8bc-a9657ae37034> a ns1:Artist ;
+    core:name "The Beatles" .
+
+<http://example.org/instrumentalbreak3/43c42b6b-d610-49f7-b363-2ba3cf73ecaa> a ns1:Instrumentalbreak ;
+    mm:hasAnnotation "" ;
+    mm:hasText "" ;
+    ex:fragmentName "Instrumental Break" .
+
+<http://example.org/outro5/efcf0407-d161-4cb3-98c5-455634ed3973> a ns1:Outro ;
+    mm:hasAnnotation """A children�s rhyme, possibly symbolising a new life and new beginnings for the band�s members.
+
+Charles Manson, who famously interpreted Beatles lyrics as satanic messages, scrawled this lyric on the Manson family front door.""" ;
+    mm:hasText "One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven" ;
+    ex:fragmentName "Outro" .
+
+<http://example.org/verse10/4cb7de80-373a-4aa0-9fcf-6df3ab240bad> a mm:Verse ;
+    mm:hasAnnotation """Legal dealings with Apple and within the band were going nowhere. Lennon and Harrison favored the appointment of Rolling Stones manager Allen Klein as their new chief adviser after the death of Brian Epstein, whilst McCartney wanted his new brother-in-law. For a short time, both were appointed as co-managers, but in the end Klein won out.
+
+
+
+Allen Klein, left, with John and Yoko.""" ;
+    mm:hasText "You never give me your money You only give me your funny paper And in the middle of negotiations You break down" ;
+    ex:fragmentName "Verse 1" .
+
+<http://example.org/verse21/64df47a6-e19d-4ea4-828d-88f060de98d3> a mm:Verse ;
+    mm:hasAnnotation "" ;
+    mm:hasText "I never give you my number I only give you my situation And in the middle of investigation I break down" ;
+    ex:fragmentName "Verse 2" .
+
+<http://example.org/verse32/01ee7f89-e748-4e50-b356-88819b5ad289> a mm:Verse ;
+    mm:hasAnnotation "A �jobber� is a middleman who purchases large quantities of goods for resale.  It specifically refers to those who buy and resell fuel, but can be used for any middleman." ;
+    mm:hasText "Out of college, money spent See no future, pay no rent All the money's gone, nowhere to go Any jobber got the sack Monday morning, turning back Yellow lorry slow, nowhere to go But oh, that magic feeling, nowhere to go Oh, that magic feeling, nowhere to go Nowhere to go" ;
+    ex:fragmentName "Verse 3" .
+
+<http://example.org/verse44/dcb5ee22-6bc1-433b-9f0e-9d9341edf5cc> a mm:Verse ;
+    mm:hasAnnotation """McCartney accepting here that the future of the band together is now behind them. He creates the image of driving away from everything, leaving it behind. He sheds a tear, however, showing that it isn�t an easy thing to do for him.
+
+Lennon announced that he was finished with the band in September 1969, so McCartney knew Abbey Road would be the last album the band ever made.""" ;
+    mm:hasText "One sweet dream Pick up the bags, get in the limousine Soon we'll be away from here Step on the gas and wipe that tear away One sweet dream came true today Came true today Came true today Yes, it did" ;
+    ex:fragmentName "Verse 4" .
+

@@ -1,0 +1,83 @@
+@prefix core: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:> .
+@prefix ex: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/> .
+@prefix mm: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:> .
+
+<http://example.org/song/bdb85d19-bedc-44ef-8388-8cfa58676b94> a <http://example.org/Song> ;
+    core:hasPart <http://example.org/bridge2/b7421d33-fceb-4fdf-9733-e8799e7c021f>,
+        <http://example.org/bridge4/91117d38-985c-48fe-a252-3faf53795297>,
+        <http://example.org/outro6/a3e317a0-decc-4133-bd2a-d6bae8ffbf66>,
+        <http://example.org/verse10/8b0dd301-7229-4327-ae05-d33a15db2559>,
+        <http://example.org/verse21/5a57fda3-9e6a-4d59-8962-81e342fbdf2a>,
+        <http://example.org/verse33/87747580-646e-43f1-8cb4-c4823b24a829>,
+        <http://example.org/verse35/56b6e4a6-e724-4077-9cdd-1b4ab941b054> ;
+    core:title "Yesterday" ;
+    mm:isInvolvedIn <http://example.org/artist/2790edff-a7d7-46e5-aebb-98680cec3c5b> ;
+    mm:isPartOfRelease <http://example.org/album/e7c6e9ae-76e5-4164-a5dc-4a0d3d7a52fd> .
+
+<http://example.org/album/e7c6e9ae-76e5-4164-a5dc-4a0d3d7a52fd> a <http://example.org/Album> ;
+    core:title "Help!" .
+
+<http://example.org/artist/2790edff-a7d7-46e5-aebb-98680cec3c5b> a <http://example.org/Artist> ;
+    core:name "The Beatles" .
+
+<http://example.org/bridge2/b7421d33-fceb-4fdf-9733-e8799e7c021f> a <http://example.org/Bridge> ;
+    mm:hasAnnotation """In a biography about Paul McCartney, it was theorized that this song was actually an homage to his late mother, Mary�rather than a lost girlfriend or spouse; which is almost a little more depressing.
+
+Paul wrote the song while he was still in a committed relationship with Jane Asher  in 1964, though this partnership would dissolve four years later, in 1968.""" ;
+    mm:hasText "Why she had to go I don't know, she wouldn't say I said something wrong Now I long for yesterday" ;
+    ex:fragmentName "Bridge" .
+
+<http://example.org/bridge4/91117d38-985c-48fe-a252-3faf53795297> a <http://example.org/Bridge> ;
+    mm:hasAnnotation "" ;
+    mm:hasText "Why she had to go I don't know, she wouldn't say I said something wrong Now I long for yesterday" ;
+    ex:fragmentName "Bridge" .
+
+<http://example.org/outro6/a3e317a0-decc-4133-bd2a-d6bae8ffbf66> a <http://example.org/Outro> ;
+    mm:hasAnnotation """The hymn is most likely inspired by Bobby day�s �little bitty pretty one.�
+
+
+
+ He�s best known for creating the song: �Rockin Robin,� which have been covered multiple times.""" ;
+    mm:hasText "Mmm-mmm-mmm-mmm-mmm, hmm-hmm" ;
+    ex:fragmentName "Outro" .
+
+<http://example.org/verse10/8b0dd301-7229-4327-ae05-d33a15db2559> a mm:Verse ;
+    mm:hasAnnotation """This song, composed entirely by Paul McCartney, came to him in a dream. He awoke one night while staying in a London attic for the filming of Help!:
+
+I got out of bed, sat at the piano, found G, found F sharp minor 7th � and that leads you through then to B to E minor, and finally back to E. It all leads forward logically. I liked the melody a lot, but because I�d dreamed it, I couldn�t believe I�d written it. I thought, �No, I�ve never written anything like this before.� But I had the tune, which was the most magic thing!
+
+The melody came to McCartney much quicker than lyrical inspiration. In order to arrange the song, he quickly scribbled out placeholder lyrics. Thus, �Yesterday� originally had the working title �Scrambled Eggs,� and opened with:
+
+Scrambled eggs
+Oh my baby, how I love your legs
+
+McCartney would subsequently write �Yellow Submarine� in bed, and John Lennon would also stumble upon �Nowhere Man� and �Across The Universe� in dreams. McCartney would later observe:
+
+When you�re trying to write a song, there are certain times when you get the essence, it�s all there. It�s like an egg being laid � not a crack or a flaw in it.""" ;
+    mm:hasText "Yesterday All my troubles seemed so far away Now it looks as though they're here to stay Oh, I believe in yesterday" ;
+    ex:fragmentName "Verse 1" .
+
+<http://example.org/verse21/5a57fda3-9e6a-4d59-8962-81e342fbdf2a> a mm:Verse ;
+    mm:hasAnnotation """George Martin had been the one to recommend a string quartet after John Lennon and George Harrison didn�t see the need for more guitars on the track and Ringo thought the same for the drums.
+
+This song is one of the biggest signs that the Beatles were changing, instead of the rock in roll and ballads of the past they presented a melancholy string song with a true heart to it, seen throughout the whole album �Help� really.
+
+This line especially has always stuck with me. The song in question represents this quelling sadness in this �shadow that is hanging over him. Yesterday coming suddenly gave the song a harsher more personal feel, the desperation to go back to what was only just lost, and the spontaneity of it all. A beautiful line by Paul.""" ;
+    mm:hasText "Suddenly I'm not half the man I used to be There's a shadow hanging over me Oh, yesterday came suddenly" ;
+    ex:fragmentName "Verse 2" .
+
+<http://example.org/verse33/87747580-646e-43f1-8cb4-c4823b24a829> a mm:Verse ;
+    mm:hasAnnotation """In the October 1997 Paul McCartney biography, Many Years From Now by Barry Miles, McCartney was said to have finalized the lyrics during a trip to Portugal in May 1965:
+
+
+I remember mulling over the tune �Yesterday�, and suddenly getting these little one-word openings to the verse. I started to develop the idea � da-da da, yes-ter-day, sud-den-ly, fun-il-ly, mer-il-ly and Yes-ter-day, that�s good. All my troubles seemed so far away.
+
+It�s easy to rhyme those a�s: say, nay, today, away, play, stay, there�s a lot of rhymes and those fall in quite easily, so I gradually pieced it together from that journey. Sud-den-ly, and �b� again, another easy rhyme: e, me, tree, flea, we, and I had the basis of it.""" ;
+    mm:hasText "Yesterday Love was such an easy game to play Now I need a place to hide away Oh, I believe in yesterday" ;
+    ex:fragmentName "Verse 3" .
+
+<http://example.org/verse35/56b6e4a6-e724-4077-9cdd-1b4ab941b054> a mm:Verse ;
+    mm:hasAnnotation "" ;
+    mm:hasText "Yesterday Love was such an easy game to play Now I need a place to hide away Oh, I believe in yesterday" ;
+    ex:fragmentName "Verse 3" .
+
