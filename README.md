@@ -7,7 +7,7 @@ For example, the `Album` class has a `core:title` attribute, the `Artist` class 
 
 ## Part-Whole Schema Pattern:
 
-The ontology employs a part-whole relationship where a `Song` is divided into parts like `Bridge`, `Outro`, and `Verse`, represented by the `core:hasPart` property.  
+The ontology employs a part-whole relationship: any object in a collection is a part of the whole composition and composition as a whole is a collection of parts, where a `Song` is divided into parts like `Bridge`, `Outro`, and `Verse`, represented by the `core:hasPart` property.  
 For instance, the song "Yesterday" has parts like `Bridge`, `Outro`, and `Verse`, as seen in the triples with the `core:hasPart` predicate.
 
 ## Participation Schema Pattern:
