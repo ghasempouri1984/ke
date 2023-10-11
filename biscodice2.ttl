@@ -1,0 +1,247 @@
+@prefix ex: <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix core: <https://w3id.org/polifonia/ontology/core/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@base <http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/> .
+
+<http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:hasPart
+core:hasPart rdf:type owl:ObjectProperty ;
+              rdfs:domain :mm:MusicEntity ;
+              rdfs:range :mm:Text .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:hasPart
+mm:hasPart rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain :mm:Text ;
+            rdfs:range :mm:TextFragment .
+			
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:isInvolvedIn
+mm:isInvolvedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :mm:MusicArtist ;
+                 rdfs:range :mm:CreativeProcess .
+
+
+### http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:creates
+mm:creates rdf:type owl:ObjectProperty ;
+            rdfs:domain :mm:CreativeProcess ;
+            rdfs:range :mm:MusicEntity .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:hasPublicationSituation
+mm:hasPublicationSituation rdf:type owl:ObjectProperty ;
+                            rdfs:domain :mm:Release ;
+                            rdfs:range :mm:PublicationSituation .
+							
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:hasTimeInterval
+core:hasTimeInterval rdf:type owl:ObjectProperty ;
+                      rdfs:domain :mm:PublicationSituation ;
+                      rdfs:range :core:TimeInterval .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:isPartOfRelease
+mm:isPartOfRelease rdf:type owl:ObjectProperty ;
+                    rdfs:domain :mm:Recording ;
+                    rdfs:range :mm:Release .
+					  
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:producesRecording
+mm:producesRecording rdf:type owl:ObjectProperty ;
+                      rdfs:domain :mm:RecordingProcess ;
+                      rdfs:range :mm:Recording .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:isRecordedBy
+mm:isRecordedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :mm:MusicEntity ;
+                 rdfs:range :mm:RecordingProcess .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:involvesCreativeAction
+mm:involvesCreativeAction rdf:type owl:ObjectProperty ;
+                           rdfs:domain :mm:CreativeProcess ;
+                           rdfs:range :mm:CreativeAction .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:involvesAgent
+core:involvesAgent rdf:type owl:ObjectProperty ;
+                    rdfs:domain :mm:CreativeAction ;
+                    rdfs:range :mm:MusicArtist .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:executesTask
+core:executesTask rdf:type owl:ObjectProperty ;
+                   rdfs:domain :mm:CreativeAction ;
+                   rdfs:range :core:CreativeTask .
+
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+rdf:rest rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:hasText
+mm:hasText rdf:type owl:DatatypeProperty ;
+            rdfs:domain :mm:TextFragment ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/fragmentName
+ex:fragmentName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :mm:TextFragment ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+rdf:first rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Line ;
+          rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#value
+rdfs:value rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Annotation ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:title
+core:title rdf:type owl:DatatypeProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :mm:Release :mm:Recording ) ] ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:name
+core:name rdf:type owl:DatatypeProperty ;
+           rdfs:domain :mm:MusicArtist ;
+           rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:CreativeTask
+core:CreativeTask rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:Text
+core:Text rdf:type owl:Class ;
+           rdfs:subClassOf :core:CreativeTask .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#core:TimeInterval
+core:TimeInterval rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Chorus
+mm:Chorus rdf:type owl:Class ;
+           rdfs:subClassOf :mm:TextFragment .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:CreativeAction
+mm:CreativeAction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:CreativeProcess
+mm:CreativeProcess rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Instrumentalbreak
+mm:Instrumentalbreak rdf:type owl:Class ;
+                      rdfs:subClassOf :mm:TextFragment .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Libretto
+mm:Libretto rdf:type owl:Class ;
+             rdfs:subClassOf :mm:Text .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Lyrics
+mm:Lyrics rdf:type owl:Class ;
+           rdfs:subClassOf :mm:Text .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:MusicArtist
+mm:MusicArtist rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:MusicEntity
+mm:MusicEntity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Outro
+mm:Outro rdf:type owl:Class ;
+          rdfs:subClassOf :mm:TextFragment .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:PublicationSituation
+mm:PublicationSituation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Recording
+mm:Recording rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:RecordingProcess
+mm:RecordingProcess rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Release
+mm:Release rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Text
+mm:Text rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:TextFragment
+mm:TextFragment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:Verse
+mm:Verse rdf:type owl:Class ;
+          rdfs:subClassOf :mm:TextFragment .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/Annotation
+ex:Annotation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/Line
+ex:Line rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18/Annotation
+ex:Annotation rdf:type owl:NamedIndividual ;
+            rdfs:value "" .
+			
+
+###  http://www.semanticweb.org/ash-lab/ontologies/2023/7/untitled-ontology-18#mm:LyricsWriting
+mm:LyricsWriting rdf:type :core:CreativeTask .
+
+
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
