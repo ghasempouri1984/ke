@@ -1,0 +1,81 @@
+
+    
+    PREFIX ex: <http://example.org/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    
+    CONSTRUCT {
+        ?song a ex:Song ;
+              ex:title "You Never Give Me Your Money" ;
+              ex:hasArtist ?artist ;
+              ex:isPartOfAlbum ?album .
+        ?artist a ex:Artist ;
+                ex:name "The Beatles" .
+        ?album a ex:Album ;
+               ex:title "Abbey Road" .
+        
+        ?song ex:hasVerse10 ?verse10 .
+        ?verse10 rdf:type ex:Verse1 ;
+                                ex:header "Verse 1" ;
+                                ex:annotation "Legal dealings with Apple and within the band were going nowhere. Lennon and Harrison favored the appointment of Rolling Stones manager Allen Klein as their new chief adviser after the death of Brian Epstein, whilst McCartney wanted his new brother-in-law. For a short time, both were appointed as co-managers, but in the end Klein won out.\n\n\n\nAllen Klein, left, with John and Yoko." ;
+                                ex:lyrics "You never give me your money You only give me your funny paper And in the middle of negotiations You break down" .
+        
+
+        ?song ex:hasVerse21 ?verse21 .
+        ?verse21 rdf:type ex:Verse2 ;
+                                ex:header "Verse 2" ;
+                                ex:annotation "" ;
+                                ex:lyrics "I never give you my number I only give you my situation And in the middle of investigation I break down" .
+        
+
+        ?song ex:hasVerse32 ?verse32 .
+        ?verse32 rdf:type ex:Verse3 ;
+                                ex:header "Verse 3" ;
+                                ex:annotation "A “jobber” is a middleman who purchases large quantities of goods for resale.  It specifically refers to those who buy and resell fuel, but can be used for any middleman." ;
+                                ex:lyrics "Out of college, money spent See no future, pay no rent All the money's gone, nowhere to go Any jobber got the sack Monday morning, turning back Yellow lorry slow, nowhere to go But oh, that magic feeling, nowhere to go Oh, that magic feeling, nowhere to go Nowhere to go" .
+        
+
+        ?song ex:hasInstrumentalbreak3 ?instrumentalbreak3 .
+        ?instrumentalbreak3 rdf:type ex:Instrumentalbreak ;
+                                ex:header "Instrumental Break" ;
+                                ex:annotation "" ;
+                                ex:lyrics "" .
+        
+
+        ?song ex:hasVerse44 ?verse44 .
+        ?verse44 rdf:type ex:Verse4 ;
+                                ex:header "Verse 4" ;
+                                ex:annotation "McCartney accepting here that the future of the band together is now behind them. He creates the image of driving away from everything, leaving it behind. He sheds a tear, however, showing that it isn’t an easy thing to do for him.\n\nLennon announced that he was finished with the band in September 1969, so McCartney knew Abbey Road would be the last album the band ever made." ;
+                                ex:lyrics "One sweet dream Pick up the bags, get in the limousine Soon we'll be away from here Step on the gas and wipe that tear away One sweet dream came true today Came true today Came true today Yes, it did" .
+        
+
+        ?song ex:hasOutro5 ?outro5 .
+        ?outro5 rdf:type ex:Outro ;
+                                ex:header "Outro" ;
+                                ex:annotation "A children’s rhyme, possibly symbolising a new life and new beginnings for the band’s members.\n\nCharles Manson, who famously interpreted Beatles lyrics as satanic messages, scrawled this lyric on the Manson family front door." ;
+                                ex:lyrics "One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven" .
+        
+    }
+    WHERE {
+        BIND (IRI(concat("http://example.org/song/", STRUUID())) AS ?song)
+        BIND (IRI(concat("http://example.org/artist/", STRUUID())) AS ?artist)
+        BIND (IRI(concat("http://example.org/album/", STRUUID())) AS ?album)
+        
+        BIND (IRI(concat("http://example.org/verse10/", STRUUID())) AS ?verse10)
+        
+
+        BIND (IRI(concat("http://example.org/verse21/", STRUUID())) AS ?verse21)
+        
+
+        BIND (IRI(concat("http://example.org/verse32/", STRUUID())) AS ?verse32)
+        
+
+        BIND (IRI(concat("http://example.org/instrumentalbreak3/", STRUUID())) AS ?instrumentalbreak3)
+        
+
+        BIND (IRI(concat("http://example.org/verse44/", STRUUID())) AS ?verse44)
+        
+
+        BIND (IRI(concat("http://example.org/outro5/", STRUUID())) AS ?outro5)
+        
+    }
+    

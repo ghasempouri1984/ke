@@ -1,0 +1,91 @@
+
+    
+    PREFIX ex: <http://example.org/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    
+    CONSTRUCT {
+        ?song a ex:Song ;
+              ex:title "Bohemian Rhapsody" ;
+              ex:hasArtist ?artist ;
+              ex:isPartOfAlbum ?album .
+        ?artist a ex:Artist ;
+                ex:name "Queen" .
+        ?album a ex:Album ;
+               ex:title "A Night at the Opera" .
+        
+        ?song ex:hasIntro0 ?intro0 .
+        ?intro0 rdf:type ex:Intro ;
+                                ex:header "Intro" ;
+                                ex:annotation "The persona’s passivity in the prior lines is strengthened by his perception of self; whereby, describing oneself as a “boy” represents his regression to a helpless state. The inclusion of “just” further informs his perceived insignificance.\n\nNevertheless, the persona qualifies this representation, expressing that an acknowledgement of his deeply helpless situation is not accompanied by self-pity (he is undesiring of “sympathy”). Instead, he copes by adopting a passive outlook (represented by “easy come, easy go”) and ultimately abandons the desire and hope to influence his life.\n\nSuch surrendering could be representational of the Kübler-Ross Grief Cycle’s final stage (i.e.acceptance)  to which the persona accepts a new way of life in light of great previous loss/suffering." ;
+                                ex:lyrics "Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality Open your eyes, look up to the skies and see I'm just a poor boy, I need no sympathy Because I'm easy come, easy go, little high, little low Any way the wind blows doesn't really matter to me, to me" .
+        
+
+        ?song ex:hasVerse11 ?verse11 .
+        ?verse11 rdf:type ex:Verse1 ;
+                                ex:header "Verse 1" ;
+                                ex:annotation "" ;
+                                ex:lyrics "Mama, just killed a man Put a gun against his head, pulled my trigger, now he's dead Mama, life had just begun But now I've gone and thrown it all away Mama, ooh, didn't mean to make you cry If I'm not back again this time tomorrow Carry on, carry on as if nothing really matters" .
+        
+
+        ?song ex:hasVerse22 ?verse22 .
+        ?verse22 rdf:type ex:Verse2 ;
+                                ex:header "Verse 2" ;
+                                ex:annotation "He (Freddie Mercury, as the protagonist-character of the song), is both lyrically and metaphorically saying goodbye, a decision to go to where no rock/pop song would dare go,\n to “face the truth\", perhaps capital punishment?\n\nThese lines take us closer to the surreality of a case whose jurisdiction is in opera-court drama-Hell, a musical thrill ride, whether perceived as scary, comedic or both, it’s a rhapsodic trip.\n\n“Goodbye … I’ve got to go\" (to “face the truth”, possibly death!?):\n\nBack to the mundane re-statement of the lines, he must face the repercussions of his crime.  After all, he “just killed a man”.  Motive?  Pre-meditated? In self-defense?  Or … (twistedly) suicide?\nIf “he” himself was the “man” he killed, metaphorically, then lyrically self-defense is plausible, given the (generally) accepted interpretation of the song.  Suicide might land one in a Hellish after-life, according to, uh, divine laws?  But re-direct: the “killing” is of a personal false “facade” and how is that murderous, if the truth sets one (and others) free?  Unless it lands you in jail, like, say, Galileo, who dared to spread his sphere-theory, blasphemous to the false-divinity of flat-earth gravity.\n\nIs “Freddie” off to some sphere of a circuit court, to pull a lyrical joke on us?  Objection! Irrelevant.  It doesn’t matter.  Because “nothing really matters”?  Over-ruled; because later, did the judgy-jurists let him go?  ‘No, no, no, no, no, no, no!\"\n\nBut “goodbye everybody”, he’s got to go; i.e., the song must move, conclusively.  The journey proceeds after a few more lyric-lines and past the bridge of Brian May’s first guitar-solo to Freddie’s piano staccatos, into a silhouetted deep dip into a La-La-land of mock-opera (as ode-to opera) madness.   Going there was and remains curious, musically/vocally stunning, and … risky, in conflated financial and artistic proportions.\n\n“Goodbye, everybody; I’ve got to go … to face the truth”.  The truth lies in our own choice to shut up or write too much about nothing.\n\nOne verdict could be construed as compensatory damages (back in “reality-land”, where money rules):\nRhapsodically, the court of music consumers longing for Bohemia ordained Queen as the people‘s band; with this song, Freddie & Co. said “goodbye” to being “starving artists”, or rather oddly “starving rock stars” (an unfair predicament).\n\nCiting the song’s success as some form of lyrical “verdict” is an unsatisfying stretch, true, but this song ran with it.   Within 6-minutes, it (and its album) afforded the band to go globe-trotting, show-stomping from stage to stage, with inevitable “goodbyes!” to many bodies in between.\n\nIf the wind had blown failure, then to fail BIG would’ve mattered as much to the band.  Goodbye everybody, keep going as if nothing or everything really matters." ;
+                                ex:lyrics "Too late, my time has come Sends shivers down my spine, body's aching all the time Goodbye, everybody, I've got to go Gotta leave you all behind and face the truth Mama, ooh (Any way the wind blows) I don't wanna die I sometimes wish I'd never been born at all" .
+        
+
+        ?song ex:hasGuitarsolo3 ?guitarsolo3 .
+        ?guitarsolo3 rdf:type ex:Guitarsolo ;
+                                ex:header "Guitar Solo" ;
+                                ex:annotation "" ;
+                                ex:lyrics "" .
+        
+
+        ?song ex:hasVerse34 ?verse34 .
+        ?verse34 rdf:type ex:Verse3 ;
+                                ex:header "Verse 3" ;
+                                ex:annotation "In this line, the persona simultaneously embodies “monstrosity” and is a victim of it.\n\nExplicitly, the prevailing regressional tone (e.g. “boy” and “mama”) paints him as passive and powerless. In this sense, the line is a third party’s plea to spare an innocent child’s life of great suffering.\n\nConversely, the persona’s parallels with Scaramouche (i.e. a clown with villainous tendencies) coupled with the assertion that “Beelzebub has a devil put aside for me”, suggests that he is capable of inflicting great pain and ‘sin’. Thus, the line presents him as the monster and pertains to either the plea to relieve him from a destructive life or the shame of being perceived as a “monstrosity” (i.e. the metaphor serves to portray how alienated he feels).\n\nThe duality of being may serve to portray the conflict between societal perceptions (that perceive him as a monster) and true character, stemming from various zeitgeists/prejudices. The disconnect seems to alienate the persona and contributes to his figurative and/or literal demise.\n\n\n\nScaramouche" ;
+                                ex:lyrics "I see a little silhouetto of a man Scaramouche, Scaramouche, will you do the Fandango? Thunderbolt and lightning, very, very frightening me (Galileo) Galileo, (Galileo) Galileo, Galileo Figaro magnifico But I'm just a poor boy, nobody loves me He's just a poor boy from a poor family Spare him his life from this monstrosity Easy come, easy go, will you let me go? Bismillah! No, we will not let you go (Let him go) Bismillah! We will not let you go (Let him go) Bismillah! We will not let you go (Let me go) Will not let you go (Let me go) Will not let you go (Never, never, never, never let me go) Ah No, no, no, no, no, no, no (Oh, mamma mia, mamma mia) Mamma mia, let me go Beelzebub has a devil put aside for me, for me, for me!" .
+        
+
+        ?song ex:hasVerse45 ?verse45 .
+        ?verse45 rdf:type ex:Verse4 ;
+                                ex:header "Verse 4" ;
+                                ex:annotation "" ;
+                                ex:lyrics "So you think you can stone me and spit in my eye? So you think you can love me and leave me to die? Oh, baby, can't do this to me, baby! Just gotta get out, just gotta get right outta here" .
+        
+
+        ?song ex:hasOutro6 ?outro6 .
+        ?outro6 rdf:type ex:Outro ;
+                                ex:header "Outro" ;
+                                ex:annotation "" ;
+                                ex:lyrics "(Ooh) (Ooh, yeah, ooh, yeah) Nothing really matters, anyone can see Nothing really matters Nothing really matters to me Any way the wind blows" .
+        
+    }
+    WHERE {
+        BIND (IRI(concat("http://example.org/song/", STRUUID())) AS ?song)
+        BIND (IRI(concat("http://example.org/artist/", STRUUID())) AS ?artist)
+        BIND (IRI(concat("http://example.org/album/", STRUUID())) AS ?album)
+        
+        BIND (IRI(concat("http://example.org/intro0/", STRUUID())) AS ?intro0)
+        
+
+        BIND (IRI(concat("http://example.org/verse11/", STRUUID())) AS ?verse11)
+        
+
+        BIND (IRI(concat("http://example.org/verse22/", STRUUID())) AS ?verse22)
+        
+
+        BIND (IRI(concat("http://example.org/guitarsolo3/", STRUUID())) AS ?guitarsolo3)
+        
+
+        BIND (IRI(concat("http://example.org/verse34/", STRUUID())) AS ?verse34)
+        
+
+        BIND (IRI(concat("http://example.org/verse45/", STRUUID())) AS ?verse45)
+        
+
+        BIND (IRI(concat("http://example.org/outro6/", STRUUID())) AS ?outro6)
+        
+    }
+    
