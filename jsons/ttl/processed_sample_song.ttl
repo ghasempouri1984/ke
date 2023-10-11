@@ -1,0 +1,65 @@
+@prefix ex:  <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://example.org/bridge2/b7421d33-fceb-4fdf-9733-e8799e7c021f>
+        rdf:type       ex:Bridge ;
+        ex:annotation  "In a biography about Paul McCartney, it was theorized that this song was actually an homage to his late mother, Mary\uFFFDrather than a lost girlfriend or spouse; which is almost a little more depressing.\n\nPaul wrote the song while he was still in a committed relationship with Jane Asher  in 1964, though this partnership would dissolve four years later, in 1968." ;
+        ex:header      "Bridge" ;
+        ex:lyrics      "Why she had to go I don't know, she wouldn't say I said something wrong Now I long for yesterday" .
+
+<http://example.org/verse35/56b6e4a6-e724-4077-9cdd-1b4ab941b054>
+        rdf:type       ex:Verse3 ;
+        ex:annotation  "" ;
+        ex:header      "Verse 3" ;
+        ex:lyrics      "Yesterday Love was such an easy game to play Now I need a place to hide away Oh, I believe in yesterday" .
+
+<http://example.org/song/bdb85d19-bedc-44ef-8388-8cfa58676b94>
+        rdf:type          ex:Song ;
+        ex:hasArtist      <http://example.org/artist/2790edff-a7d7-46e5-aebb-98680cec3c5b> ;
+        ex:hasBridge2     <http://example.org/bridge2/b7421d33-fceb-4fdf-9733-e8799e7c021f> ;
+        ex:hasBridge4     <http://example.org/bridge4/91117d38-985c-48fe-a252-3faf53795297> ;
+        ex:hasOutro6      <http://example.org/outro6/a3e317a0-decc-4133-bd2a-d6bae8ffbf66> ;
+        ex:hasVerse10     <http://example.org/verse10/8b0dd301-7229-4327-ae05-d33a15db2559> ;
+        ex:hasVerse21     <http://example.org/verse21/5a57fda3-9e6a-4d59-8962-81e342fbdf2a> ;
+        ex:hasVerse33     <http://example.org/verse33/87747580-646e-43f1-8cb4-c4823b24a829> ;
+        ex:hasVerse35     <http://example.org/verse35/56b6e4a6-e724-4077-9cdd-1b4ab941b054> ;
+        ex:isPartOfAlbum  <http://example.org/album/e7c6e9ae-76e5-4164-a5dc-4a0d3d7a52fd> ;
+        ex:title          "Yesterday" .
+
+<http://example.org/verse33/87747580-646e-43f1-8cb4-c4823b24a829>
+        rdf:type       ex:Verse3 ;
+        ex:annotation  "In the October 1997 Paul McCartney biography, Many Years From Now by Barry Miles, McCartney was said to have finalized the lyrics during a trip to Portugal in May 1965:\n\n\nI remember mulling over the tune \uFFFDYesterday\uFFFD, and suddenly getting these little one-word openings to the verse. I started to develop the idea \uFFFD da-da da, yes-ter-day, sud-den-ly, fun-il-ly, mer-il-ly and Yes-ter-day, that\uFFFDs good. All my troubles seemed so far away.\n\nIt\uFFFDs easy to rhyme those a\uFFFDs: say, nay, today, away, play, stay, there\uFFFDs a lot of rhymes and those fall in quite easily, so I gradually pieced it together from that journey. Sud-den-ly, and \uFFFDb\uFFFD again, another easy rhyme: e, me, tree, flea, we, and I had the basis of it." ;
+        ex:header      "Verse 3" ;
+        ex:lyrics      "Yesterday Love was such an easy game to play Now I need a place to hide away Oh, I believe in yesterday" .
+
+<http://example.org/verse10/8b0dd301-7229-4327-ae05-d33a15db2559>
+        rdf:type       ex:Verse1 ;
+        ex:annotation  "This song, composed entirely by Paul McCartney, came to him in a dream. He awoke one night while staying in a London attic for the filming of Help!:\n\nI got out of bed, sat at the piano, found G, found F sharp minor 7th \uFFFD and that leads you through then to B to E minor, and finally back to E. It all leads forward logically. I liked the melody a lot, but because I\uFFFDd dreamed it, I couldn\uFFFDt believe I\uFFFDd written it. I thought, \uFFFDNo, I\uFFFDve never written anything like this before.\uFFFD But I had the tune, which was the most magic thing!\n\nThe melody came to McCartney much quicker than lyrical inspiration. In order to arrange the song, he quickly scribbled out placeholder lyrics. Thus, \uFFFDYesterday\uFFFD originally had the working title \uFFFDScrambled Eggs,\uFFFD and opened with:\n\nScrambled eggs\nOh my baby, how I love your legs\n\nMcCartney would subsequently write \uFFFDYellow Submarine\uFFFD in bed, and John Lennon would also stumble upon \uFFFDNowhere Man\uFFFD and \uFFFDAcross The Universe\uFFFD in dreams. McCartney would later observe:\n\nWhen you\uFFFDre trying to write a song, there are certain times when you get the essence, it\uFFFDs all there. It\uFFFDs like an egg being laid \uFFFD not a crack or a flaw in it." ;
+        ex:header      "Verse 1" ;
+        ex:lyrics      "Yesterday All my troubles seemed so far away Now it looks as though they're here to stay Oh, I believe in yesterday" .
+
+<http://example.org/album/e7c6e9ae-76e5-4164-a5dc-4a0d3d7a52fd>
+        rdf:type  ex:Album ;
+        ex:title  "Help!" .
+
+<http://example.org/artist/2790edff-a7d7-46e5-aebb-98680cec3c5b>
+        rdf:type  ex:Artist ;
+        ex:name   "The Beatles" .
+
+<http://example.org/verse21/5a57fda3-9e6a-4d59-8962-81e342fbdf2a>
+        rdf:type       ex:Verse2 ;
+        ex:annotation  "George Martin had been the one to recommend a string quartet after John Lennon and George Harrison didn\uFFFDt see the need for more guitars on the track and Ringo thought the same for the drums.\n\nThis song is one of the biggest signs that the Beatles were changing, instead of the rock in roll and ballads of the past they presented a melancholy string song with a true heart to it, seen throughout the whole album \uFFFDHelp\uFFFD really.\n\nThis line especially has always stuck with me. The song in question represents this quelling sadness in this \uFFFDshadow that is hanging over him. Yesterday coming suddenly gave the song a harsher more personal feel, the desperation to go back to what was only just lost, and the spontaneity of it all. A beautiful line by Paul." ;
+        ex:header      "Verse 2" ;
+        ex:lyrics      "Suddenly I'm not half the man I used to be There's a shadow hanging over me Oh, yesterday came suddenly" .
+
+<http://example.org/bridge4/91117d38-985c-48fe-a252-3faf53795297>
+        rdf:type       ex:Bridge ;
+        ex:annotation  "" ;
+        ex:header      "Bridge" ;
+        ex:lyrics      "Why she had to go I don't know, she wouldn't say I said something wrong Now I long for yesterday" .
+
+<http://example.org/outro6/a3e317a0-decc-4133-bd2a-d6bae8ffbf66>
+        rdf:type       ex:Outro ;
+        ex:annotation  "The hymn is most likely inspired by Bobby day\uFFFDs \uFFFDlittle bitty pretty one.\uFFFD\n\n\n\n He\uFFFDs best known for creating the song: \uFFFDRockin Robin,\uFFFD which have been covered multiple times." ;
+        ex:header      "Outro" ;
+        ex:lyrics      "Mmm-mmm-mmm-mmm-mmm, hmm-hmm" .

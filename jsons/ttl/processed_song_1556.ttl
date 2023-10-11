@@ -1,0 +1,65 @@
+@prefix ex:  <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://example.org/chorus2/8c960653-c122-47bb-95d5-0298083cd878>
+        rdf:type       ex:Chorus ;
+        ex:annotation  "McCartney met 2 women of the original Little Rock Nine, Thelma Mothershed Wair and Elizabeth Eckford, at his Little Rock Concert on April 30th, 2016.\n\n\uFFFDIncredible to meet two of the Little Rock Nine\uFFFDpioneers of the civil rights movement and inspiration for Blackbird.\uFFFD \uFFFD Paul McCartney, Twitter" ;
+        ex:header      "Chorus" ;
+        ex:lyrics      "Blackbird fly, blackbird fly Into the light of the dark, black night" .
+
+<http://example.org/artist/c2326fc3-5151-4ac4-9912-1158c8502f33>
+        rdf:type  ex:Artist ;
+        ex:name   "The Beatles" .
+
+<http://example.org/outro6/f776ab2d-9404-4c6b-ad16-288ceb3327d0>
+        rdf:type       ex:Outro ;
+        ex:annotation  "" ;
+        ex:header      "Outro" ;
+        ex:lyrics      "You were only waiting for this moment to arise You were only waiting for this moment to arise" .
+
+<http://example.org/instrumentalbreak3/e5753a3d-9909-4202-a448-108e8bf395e6>
+        rdf:type       ex:Instrumentalbreak ;
+        ex:annotation  "" ;
+        ex:header      "Instrumental Break" ;
+        ex:lyrics      "" .
+
+<http://example.org/verse21/b853b884-31fe-4f5b-abba-c27fa3b730a8>
+        rdf:type       ex:Verse2 ;
+        ex:annotation  "Despite Paul McCartney\uFFFDs optimism, flying with a broken wing, or seeing with sunken eyes, is very difficult. Ending segregation was important, but it didn\uFFFDt provide African Americans with equality\uFFFDtheir circumstances were still much worse than those of their white counterparts.\n\nToday, compared to white citizens, African Americans are less likely to own their own home, more likely to go to prison, and will earn less money on average. Ending segregation alone has not led to equality." ;
+        ex:header      "Verse 2" ;
+        ex:lyrics      "Blackbird singing in the dead of night Take these sunken eyes and learn to see All your life You were only waiting for this moment to be free" .
+
+<http://example.org/chorus4/df25c936-383d-4f0b-a406-3a0b2e129c44>
+        rdf:type       ex:Chorus ;
+        ex:annotation  "" ;
+        ex:header      "Chorus" ;
+        ex:lyrics      "Blackbird fly, blackbird fly Into the light of the dark, black night" .
+
+<http://example.org/verse35/2a2d35e9-3fd5-436f-a1b0-2b92b6e09036>
+        rdf:type       ex:Verse3 ;
+        ex:annotation  "In Britain, \uFFFD'bird\uFFFD\uFFFD is slang for a young girl.\n\nI actually just remembered why I\uFFFDd written \uFFFDBlackbird\uFFFD [\uFFFD] I was in Scotland playing on my guitar, and I remembered this whole idea of \uFFFDyou were only waiting for this moment to arise\uFFFD was about [\uFFFD] Black people\uFFFDs struggle in the southern states, and I was using the symbolism of a blackbird. It\uFFFDs not really about a blackbird whose wings are broken, you know, it\uFFFDs a bit more symbolic.\n\n\uFFFDPaul McCartney in 2002" ;
+        ex:header      "Verse 3" ;
+        ex:lyrics      "Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise" .
+
+<http://example.org/album/968c6a55-7bec-4d29-812f-e6938ce105b0>
+        rdf:type  ex:Album ;
+        ex:title  "The Beatles (White Album)" .
+
+<http://example.org/song/4c3f7144-ac44-43c9-8182-b02e94621a75>
+        rdf:type                  ex:Song ;
+        ex:hasArtist              <http://example.org/artist/c2326fc3-5151-4ac4-9912-1158c8502f33> ;
+        ex:hasChorus2             <http://example.org/chorus2/8c960653-c122-47bb-95d5-0298083cd878> ;
+        ex:hasChorus4             <http://example.org/chorus4/df25c936-383d-4f0b-a406-3a0b2e129c44> ;
+        ex:hasInstrumentalbreak3  <http://example.org/instrumentalbreak3/e5753a3d-9909-4202-a448-108e8bf395e6> ;
+        ex:hasOutro6              <http://example.org/outro6/f776ab2d-9404-4c6b-ad16-288ceb3327d0> ;
+        ex:hasVerse10             <http://example.org/verse10/949e86d2-f3db-492c-b649-2a4950b7ba74> ;
+        ex:hasVerse21             <http://example.org/verse21/b853b884-31fe-4f5b-abba-c27fa3b730a8> ;
+        ex:hasVerse35             <http://example.org/verse35/2a2d35e9-3fd5-436f-a1b0-2b92b6e09036> ;
+        ex:isPartOfAlbum          <http://example.org/album/968c6a55-7bec-4d29-812f-e6938ce105b0> ;
+        ex:title                  "Blackbird" .
+
+<http://example.org/verse10/949e86d2-f3db-492c-b649-2a4950b7ba74>
+        rdf:type       ex:Verse1 ;
+        ex:annotation  "This line, written by Paul McCartney, is a reference to the African American community\uFFFDs struggle for civil rights, especially in the 1960s.\n\nIt is a metaphor, comparing the plight of Black Americans in the 1960s to that of a blackbird learning to fly with broken wings.\n\nThe \uFFFDbroken wings\uFFFD represent how the community has been beaten down and oppressed. The phrase \uFFFDlearn to fly\uFFFD is about how the community has the potential to arise and fight for their rights, and has been, just as the blackbird in the song is taking its wings, though they are damaged, and learning to fly with them.\n\nThe line draws particularly from the case of the \uFFFDLittle Rock Nine,\uFFFD nine brave Black students who attended a school in Arkansas that had previously been all White, planting themselves directly in the face of racism and discrimination. (More can be read about this through the first link below.)\n\nSources:\n\n\nhttps://americansongwriter.com/meaning-blackbird-the-beatles-song-lyrics/\nhttps://musicaroo.com/blackbird-lyrics-meaning/" ;
+        ex:header      "Verse 1" ;
+        ex:lyrics      "Blackbird singing in the dead of night Take these broken wings and learn to fly All your life You were only waiting for this moment to arise" .

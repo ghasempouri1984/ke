@@ -1,0 +1,58 @@
+@prefix ex:  <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://example.org/verse32/01ee7f89-e748-4e50-b356-88819b5ad289>
+        rdf:type       ex:Verse3 ;
+        ex:annotation  "A \uFFFDjobber\uFFFD is a middleman who purchases large quantities of goods for resale.  It specifically refers to those who buy and resell fuel, but can be used for any middleman." ;
+        ex:header      "Verse 3" ;
+        ex:lyrics      "Out of college, money spent See no future, pay no rent All the money's gone, nowhere to go Any jobber got the sack Monday morning, turning back Yellow lorry slow, nowhere to go But oh, that magic feeling, nowhere to go Oh, that magic feeling, nowhere to go Nowhere to go" .
+
+<http://example.org/verse21/64df47a6-e19d-4ea4-828d-88f060de98d3>
+        rdf:type       ex:Verse2 ;
+        ex:annotation  "" ;
+        ex:header      "Verse 2" ;
+        ex:lyrics      "I never give you my number I only give you my situation And in the middle of investigation I break down" .
+
+<http://example.org/artist/63e871b0-e4cf-40de-a8bc-a9657ae37034>
+        rdf:type  ex:Artist ;
+        ex:name   "The Beatles" .
+
+<http://example.org/verse10/4cb7de80-373a-4aa0-9fcf-6df3ab240bad>
+        rdf:type       ex:Verse1 ;
+        ex:annotation  "Legal dealings with Apple and within the band were going nowhere. Lennon and Harrison favored the appointment of Rolling Stones manager Allen Klein as their new chief adviser after the death of Brian Epstein, whilst McCartney wanted his new brother-in-law. For a short time, both were appointed as co-managers, but in the end Klein won out.\n\n\n\nAllen Klein, left, with John and Yoko." ;
+        ex:header      "Verse 1" ;
+        ex:lyrics      "You never give me your money You only give me your funny paper And in the middle of negotiations You break down" .
+
+<http://example.org/instrumentalbreak3/43c42b6b-d610-49f7-b363-2ba3cf73ecaa>
+        rdf:type       ex:Instrumentalbreak ;
+        ex:annotation  "" ;
+        ex:header      "Instrumental Break" ;
+        ex:lyrics      "" .
+
+<http://example.org/verse44/dcb5ee22-6bc1-433b-9f0e-9d9341edf5cc>
+        rdf:type       ex:Verse4 ;
+        ex:annotation  "McCartney accepting here that the future of the band together is now behind them. He creates the image of driving away from everything, leaving it behind. He sheds a tear, however, showing that it isn\uFFFDt an easy thing to do for him.\n\nLennon announced that he was finished with the band in September 1969, so McCartney knew Abbey Road would be the last album the band ever made." ;
+        ex:header      "Verse 4" ;
+        ex:lyrics      "One sweet dream Pick up the bags, get in the limousine Soon we'll be away from here Step on the gas and wipe that tear away One sweet dream came true today Came true today Came true today Yes, it did" .
+
+<http://example.org/song/d4c491b3-6bca-42cc-89bb-553b94168595>
+        rdf:type                  ex:Song ;
+        ex:hasArtist              <http://example.org/artist/63e871b0-e4cf-40de-a8bc-a9657ae37034> ;
+        ex:hasInstrumentalbreak3  <http://example.org/instrumentalbreak3/43c42b6b-d610-49f7-b363-2ba3cf73ecaa> ;
+        ex:hasOutro5              <http://example.org/outro5/efcf0407-d161-4cb3-98c5-455634ed3973> ;
+        ex:hasVerse10             <http://example.org/verse10/4cb7de80-373a-4aa0-9fcf-6df3ab240bad> ;
+        ex:hasVerse21             <http://example.org/verse21/64df47a6-e19d-4ea4-828d-88f060de98d3> ;
+        ex:hasVerse32             <http://example.org/verse32/01ee7f89-e748-4e50-b356-88819b5ad289> ;
+        ex:hasVerse44             <http://example.org/verse44/dcb5ee22-6bc1-433b-9f0e-9d9341edf5cc> ;
+        ex:isPartOfAlbum          <http://example.org/album/05c900b2-b53f-454c-b76d-117761f39bdb> ;
+        ex:title                  "You Never Give Me Your Money" .
+
+<http://example.org/album/05c900b2-b53f-454c-b76d-117761f39bdb>
+        rdf:type  ex:Album ;
+        ex:title  "Abbey Road" .
+
+<http://example.org/outro5/efcf0407-d161-4cb3-98c5-455634ed3973>
+        rdf:type       ex:Outro ;
+        ex:annotation  "A children\uFFFDs rhyme, possibly symbolising a new life and new beginnings for the band\uFFFDs members.\n\nCharles Manson, who famously interpreted Beatles lyrics as satanic messages, scrawled this lyric on the Manson family front door." ;
+        ex:header      "Outro" ;
+        ex:lyrics      "One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven One, two, three, four, five, six, seven All good children go to Heaven" .
