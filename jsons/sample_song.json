@@ -1,0 +1,79 @@
+{
+    "song_title": "Yesterday",
+    "artist_name": "The Beatles",
+    "publication_date": {
+        "year": 1965,
+        "month": 9,
+        "day": 13
+    },
+    "album_title": "Help!",
+    "lyrics": [
+        {
+            "header": "Verse 1",
+            "annotation": "This song, composed entirely by Paul McCartney, came to him in a dream. He awoke one night while staying in a London attic for the filming of Help!:\n\nI got out of bed, sat at the piano, found G, found F sharp minor 7th – and that leads you through then to B to E minor, and finally back to E. It all leads forward logically. I liked the melody a lot, but because I’d dreamed it, I couldn’t believe I’d written it. I thought, ‘No, I’ve never written anything like this before.’ But I had the tune, which was the most magic thing!\n\nThe melody came to McCartney much quicker than lyrical inspiration. In order to arrange the song, he quickly scribbled out placeholder lyrics. Thus, “Yesterday” originally had the working title “Scrambled Eggs,” and opened with:\n\nScrambled eggs\nOh my baby, how I love your legs\n\nMcCartney would subsequently write “Yellow Submarine” in bed, and John Lennon would also stumble upon “Nowhere Man” and “Across The Universe” in dreams. McCartney would later observe:\n\nWhen you’re trying to write a song, there are certain times when you get the essence, it’s all there. It’s like an egg being laid – not a crack or a flaw in it.",
+            "lyrics": [
+                "Yesterday",
+                "All my troubles seemed so far away",
+                "Now it looks as though they're here to stay",
+                "Oh, I believe in yesterday"
+            ]
+        },
+        {
+            "header": "Verse 2",
+            "annotation": "George Martin had been the one to recommend a string quartet after John Lennon and George Harrison didn’t see the need for more guitars on the track and Ringo thought the same for the drums.\n\nThis song is one of the biggest signs that the Beatles were changing, instead of the rock in roll and ballads of the past they presented a melancholy string song with a true heart to it, seen throughout the whole album ‘Help’ really.\n\nThis line especially has always stuck with me. The song in question represents this quelling sadness in this ‘shadow that is hanging over him. Yesterday coming suddenly gave the song a harsher more personal feel, the desperation to go back to what was only just lost, and the spontaneity of it all. A beautiful line by Paul.",
+            "lyrics": [
+                "Suddenly",
+                "I'm not half the man I used to be",
+                "There's a shadow hanging over me",
+                "Oh, yesterday came suddenly"
+            ]
+        },
+        {
+            "header": "Bridge",
+            "annotation": "In a biography about Paul McCartney, it was theorized that this song was actually an homage to his late mother, Mary–rather than a lost girlfriend or spouse; which is almost a little more depressing.\n\nPaul wrote the song while he was still in a committed relationship with Jane Asher  in 1964, though this partnership would dissolve four years later, in 1968.",
+            "lyrics": [
+                "Why she had to go",
+                "I don't know, she wouldn't say",
+                "I said something wrong",
+                "Now I long for yesterday"
+            ]
+        },
+        {
+            "header": "Verse 3",
+            "annotation": "In the October 1997 Paul McCartney biography, Many Years From Now by Barry Miles, McCartney was said to have finalized the lyrics during a trip to Portugal in May 1965:\n\n\nI remember mulling over the tune ‘Yesterday’, and suddenly getting these little one-word openings to the verse. I started to develop the idea … da-da da, yes-ter-day, sud-den-ly, fun-il-ly, mer-il-ly and Yes-ter-day, that’s good. All my troubles seemed so far away.\n\nIt’s easy to rhyme those a’s: say, nay, today, away, play, stay, there’s a lot of rhymes and those fall in quite easily, so I gradually pieced it together from that journey. Sud-den-ly, and ‘b’ again, another easy rhyme: e, me, tree, flea, we, and I had the basis of it.",
+            "lyrics": [
+                "Yesterday",
+                "Love was such an easy game to play",
+                "Now I need a place to hide away",
+                "Oh, I believe in yesterday"
+            ]
+        },
+        {
+            "header": "Bridge",
+            "annotation": "",
+            "lyrics": [
+                "Why she had to go",
+                "I don't know, she wouldn't say",
+                "I said something wrong",
+                "Now I long for yesterday"
+            ]
+        },
+        {
+            "header": "Verse 3",
+            "annotation": "",
+            "lyrics": [
+                "Yesterday",
+                "Love was such an easy game to play",
+                "Now I need a place to hide away",
+                "Oh, I believe in yesterday"
+            ]
+        },
+        {
+            "header": "Outro",
+            "annotation": "The hymn is most likely inspired by Bobby day’s “little bitty pretty one.”\n\n\n\n He’s best known for creating the song: ‘Rockin Robin,’ which have been covered multiple times.",
+            "lyrics": [
+                "Mmm-mmm-mmm-mmm-mmm, hmm-hmm"
+            ]
+        }
+    ]
+}
